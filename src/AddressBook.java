@@ -6,12 +6,12 @@ public class AddressBook {
     public AddressBook() {
     }
 
-    public void addBuddy() {
-        buddies.add(new BuddyInfo());
+    public void addBuddy(BuddyInfo buddyInfo) {
+        buddies.add(buddyInfo);
     }
 
-    public void removeBuddy(String name) {
-        buddies.removeIf(buddy -> buddy.getName().equals(name));
+    public void removeBuddy(BuddyInfo buddyInfo) {
+        buddies.remove(buddyInfo);
     }
 
     public ArrayList<BuddyInfo> getBuddies() {
