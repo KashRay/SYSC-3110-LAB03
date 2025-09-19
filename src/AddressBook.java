@@ -1,13 +1,16 @@
 import java.util.ArrayList;
 
 public class AddressBook {
-    private final ArrayList<BuddyInfo> buddies = new ArrayList<>();
+    private final ArrayList<BuddyInfo> buddies;
 
     public AddressBook() {
+         buddies = new ArrayList<>();
     }
 
     public void addBuddy(BuddyInfo buddyInfo) {
-        buddies.add(buddyInfo);
+        if (buddyInfo != null) {
+            buddies.add(buddyInfo);
+        }
     }
 
     public void removeBuddy(BuddyInfo buddyInfo) {
