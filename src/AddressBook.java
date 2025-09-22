@@ -21,9 +21,15 @@ public class AddressBook {
         return buddies;
     }
 
+    public void toPrint() {
+        for  (BuddyInfo buddyInfo : buddies) {
+            System.out.println(buddyInfo + "\n");
+        }
+    }
+
     public static void main(String[] args) {
         System.out.println("Address Book");
     }
 }
 
-//Testing the github editor
+//Testing the GitHub editor
